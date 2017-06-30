@@ -1,11 +1,11 @@
-# Selenium-chrome-firefox-tips
+# Selenium-Chrome-Firefox-Tips-Python
 Selenium Chrome and Firefox automated browser tips for blocking images, geotagging, etc...
 
-## Automated Browser testing
+## Automated Browser testing --python
 
  In #dissablemodelsinselenium.py you can find a cheat code to minimize the time complexity while using selenium Chrome or selenium Firefox
 
-#### Firefox Cheats: (Selenium)
+#### Firefox Cheats: (Selenium) --python
      firefox_profile = webdriver.FirefoxProfile()
      firefox_profile.set_preference('permissions.default.stylesheet', 2)
      firefox_profile.set_preference('permissions.default.image', 2)
@@ -13,7 +13,7 @@ Selenium Chrome and Firefox automated browser tips for blocking images, geotaggi
 
      driver = webdriver.Firefox(firefox_profile=firefox_profile)
 
- #### Chrome/Chromium Cheats:(Selenium)
+ #### Chrome/Chromium Cheats:(Selenium)--python
      chromeOptions = webdriver.ChromeOptions()
      prefs = {"profile.managed_default_content_settings.images":2,
              "profile.default_content_setting_values.notifications":2,
@@ -30,7 +30,7 @@ Selenium Chrome and Firefox automated browser tips for blocking images, geotaggi
      chromeOptions.add_experimental_option("prefs",prefs)
      driver = webdriver.Chrome(chrome_options=chromeOptions)
      
- #### Executing Automated browser using selenium
+ #### Executing Automated browser using selenium: --python
  
      driver.get('https://www.hubspot.com/')
      driver.close()
