@@ -29,6 +29,12 @@ Selenium Chrome and Firefox automated browser tips for blocking images, geotaggi
              }
      chromeOptions.add_experimental_option("prefs",prefs)
      driver = webdriver.Chrome(chrome_options=chromeOptions)
+
+## Note:
+   ### 0 ==> default,
+   ### 1 ==> Allow,
+   ### 2 ==> Block.
+     
      
  #### Executing Automated browser using selenium: --python
  
