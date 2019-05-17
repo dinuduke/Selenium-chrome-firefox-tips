@@ -1,7 +1,7 @@
 Selenium Chrome and Firefox automated browser tips for blocking images, geotagging, etc...
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+
 
 # firefox_profile = webdriver.FirefoxProfile()
 # firefox_profile.set_preference('permissions.default.stylesheet', 2)
@@ -23,7 +23,7 @@ prefs = {"profile.managed_default_content_settings.images":2,
 
          }
 chromeOptions.add_experimental_option("prefs",prefs)
-driver = webdriver.Chrome(chrome_options=chromeOptions)
+driver = webdriver.Chrome(options=chromeOptions)
 
 driver.get('https://www.hubspot.com/')
 driver.close()
